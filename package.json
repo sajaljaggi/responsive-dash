@@ -1,5 +1,6 @@
 {
   "name": "grid-layout",
+  "homepage": "https://github.com/sajaljaggi/responsive-dash.git",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,12 +9,16 @@
     "host": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
+
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
     "echarts": "^5.6.0",
     "echarts-for-react": "^3.0.2",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
